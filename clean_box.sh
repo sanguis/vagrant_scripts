@@ -4,7 +4,7 @@
 # may take a while to run.
 # Adapted from https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one
 # run with:
-# `vagrant ssh -c "wget -qO- `
+# `vagrant ssh -c "wget -qO- https://github.com/sanguis/vagrant_scripts/raw/master/clean_box.sh| bash"`
 
  # Remove APT cache
  sudo apt-get clean
@@ -16,4 +16,4 @@
 
  # Clear the Bash History and exit the VM:
 
- cat /dev/null > ~/.bash_history && history -c && exit
+sudo -d cat /dev/null > /home/vagrant/.bash_history && history -c && exit
