@@ -16,4 +16,4 @@
 
  # Clear the Bash History and exit the VM:
 
-sudo -d cat /dev/null > /home/vagrant/.bash_history && history -c && exit
+sudo -s cat /dev/null > /home/vagrant/.bash_history && history -c && exit
