@@ -9,6 +9,7 @@ then
 else
   v=$1
 fi
+wget http://download.virtualbox.org/virtualbox/$v/VBoxGuestAdditions_$v.iso
 
 echo "Installing VBoxGuestAdditions version $v."
 
